@@ -1,8 +1,18 @@
 import React from 'react';
-import { LayoutContainer } from './Layout.styles';
+import { Content, LayoutContainer } from './Layout.styles';
+import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => {
-    return <LayoutContainer>{children}</LayoutContainer>;
+    return <LayoutContainer>
+
+        <Link to="/">
+                <h1>BIOFERTILIZANTES</h1>
+            </Link>
+       
+        <Content>
+            {children}
+        </Content>
+        </LayoutContainer>;
 };
 
 export default Layout;

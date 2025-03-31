@@ -1,7 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // Importando o useNavigate
+import { Link, useNavigate } from 'react-router-dom';  // Importando o useNavigate
 import Layout from '../../components/Layout';
 import Preparo from '../../components/Preparo';
+import ModoDePreparo from '../../components/Preparo';
 
 const Home = () => {
     const navigate = useNavigate();  // Inicializando o useNavigate
@@ -13,10 +14,9 @@ const Home = () => {
 
     return (
         <Layout>
-            <h1>BIOFERTILIZANTES</h1>
-            <p>This is the Home page content.</p>
-            {/* Botão que chama a função handleRedirect */}
-            <button onClick={handleRedirect}>BIOFERTILIZANTE </button>
+            
+           <ModoDePreparo />
+           
         </Layout>
     );
     

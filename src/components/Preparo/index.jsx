@@ -1,10 +1,6 @@
 import React from 'react';
 import { PreparoContainer } from './Preparo.styles'
 
-function Preparo({ children }) {
-    return <PreparoContainer>{children}</PreparoContainer>;
-  }
-
 
   const ModoDePreparo = () => {  // Altere para algo único
     return (
@@ -17,4 +13,4 @@ function Preparo({ children }) {
 
 
 
-  export default Preparo;
+  export default ModoDePreparo;
